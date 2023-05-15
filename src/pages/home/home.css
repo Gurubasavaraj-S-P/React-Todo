@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage {
+
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage {
+    background: linear-gradient(309deg, #c31ef3, #231ef3, #1ea6f3);
+    background-size: 600% 600%;
+
+    -webkit-animation: bgani 21s ease infinite;
+    -moz-animation: bgani 21s ease infinite;
+    animation: bgani 21s ease infinite;
+}
+
+@-webkit-keyframes bgani {
+    0% {
+        background-position: 0% 4%
+    }
+
+    50% {
+        background-position: 100% 97%
+    }
+
+    100% {
+        background-position: 0% 4%
+    }
+}
+
+@-moz-keyframes bgani {
+    0% {
+        background-position: 0% 4%
+    }
+
+    50% {
+        background-position: 100% 97%
+    }
+
+    100% {
+        background-position: 0% 4%
+    }
+}
+
+@keyframes bgani {
+    0% {
+        background-position: 0% 4%
+    }
+
+    50% {
+        background-position: 100% 97%
+    }
+
+    100% {
+        background-position: 0% 4%
+    }
+}
+
+.home-container {
+    width: 80vw;
+    height: auto;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 13px;
+    border: 1px solid rgba(53, 30, 30, 0.18);
+    overflow:visible;
+    white-space:unset;
+    max-height: fit-content;
+    margin: 30px;
+}
+
+.task-box{
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px 15px;
+    margin: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 7px;
+    border: 1px solid rgba(53, 30, 30, 0.38);
+}
+
+.home-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-header > h2{
+    color: rgba(255,255,255,0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.77);
+}
+
+.glass-buttons{
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: 600;
+  }
+  
+  .glass-buttons:hover {
+    background-color: rgba(255,255,255,0.2);
+    letter-spacing: 4px;
+    transition: 0.5s;
+  }
